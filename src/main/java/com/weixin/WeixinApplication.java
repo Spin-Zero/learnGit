@@ -23,6 +23,7 @@ public class WeixinApplication {
     public ResponseEntity<Map<String, Object>> index() {
         Map<String, Object> response = new HashMap<>();
         response.put("city", "Beijing");
+        System.out.println("hello");
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
